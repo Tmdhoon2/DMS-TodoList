@@ -1,4 +1,4 @@
-package com.tmdhoon.todolist;
+package com.tmdhoon.todolist.Api;
 
 public class LoginRegisterResponse {
     private String name;
