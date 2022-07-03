@@ -4,9 +4,8 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
+import com.tmdhoon.todolist.Lobby.LoginActivity
 import com.tmdhoon.todolist.databinding.ActivitySplashBinding
-import java.time.Duration
-import javax.xml.datatype.DatatypeConstants.DURATION
 
 class SplashActivity : AppCompatActivity() {
 

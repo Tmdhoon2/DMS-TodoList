@@ -23,7 +23,7 @@ import com.tmdhoon.todolist.recyclerview.TodoAdapter;
 
 import java.util.ArrayList;
 
-public class HomeFragment extends Fragment {
+public class HomeFragment extends Fragment{
 
     private ArrayList<ReData> arrayList = new ArrayList<>();
     private RecyclerView recyclerView;
@@ -34,8 +34,6 @@ public class HomeFragment extends Fragment {
    public View onCreateView(LayoutInflater inflater, ViewGroup containter,
                             Bundle savedInstanceState){
        View view = inflater.inflate(R.layout.fragment_home, containter, false);
-//       View view1 = inflater.inflate(R.id.checkbox, containter, false);
-//       View view2 = inflater.inflate(R.id.tvTodo, containter, false);
 
        recyclerView = (RecyclerView) view.findViewById(R.id.recyclerview);
        recyclerView.setHasFixedSize(true);
@@ -47,8 +45,6 @@ public class HomeFragment extends Fragment {
        recyclerView.setItemAnimator(new DefaultItemAnimator());
        recyclerView.setAdapter(todoAdapter);
 
-//       checkBox = (CheckBox) view1.findViewById(R.id.checkbox);
-//       tvTodo = (TextView) view2.findViewById(R.id.tvTodo);
 
        return view;
    }

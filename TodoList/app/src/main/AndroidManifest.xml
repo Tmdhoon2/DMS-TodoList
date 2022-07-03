@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.tmdhoon.todolist">
 
+    <uses-permission android:name="android.permission.INTERNET"/>
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -10,13 +12,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TodoList.Splash">
         <activity
-            android:name=".RegisterActivity"
+            android:name=".Lobby.RegisterActivity"
             android:exported="false" />
         <activity
-            android:name=".LoginActivity"
+            android:name=".Lobby.LoginActivity"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".Lobby.MainActivity"
             android:exported="false" />
         <activity
             android:name=".SplashActivity"

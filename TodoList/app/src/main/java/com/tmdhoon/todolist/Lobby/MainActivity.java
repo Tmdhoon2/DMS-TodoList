@@ -1,4 +1,4 @@
-package com.tmdhoon.todolist;
+package com.tmdhoon.todolist.Lobby;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -10,6 +10,7 @@ import android.view.MenuItem;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationBarView;
+import com.tmdhoon.todolist.R;
 import com.tmdhoon.todolist.databinding.ActivityMainBinding;
 import com.tmdhoon.todolist.fragment.HomeFragment;
 import com.tmdhoon.todolist.fragment.MypageFragment;
