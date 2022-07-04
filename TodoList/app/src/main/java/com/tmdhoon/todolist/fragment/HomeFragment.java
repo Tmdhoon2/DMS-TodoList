@@ -1,12 +1,9 @@
 package com.tmdhoon.todolist.fragment;
 
-import android.annotation.SuppressLint;
-import android.graphics.Paint;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.TextView;
 
@@ -17,9 +14,8 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.tmdhoon.todolist.R;
-import com.tmdhoon.todolist.databinding.FragmentHomeBinding;
-import com.tmdhoon.todolist.recyclerview.ReData;
-import com.tmdhoon.todolist.recyclerview.TodoAdapter;
+import com.tmdhoon.todolist.Recyclerview.ReData;
+import com.tmdhoon.todolist.Recyclerview.TodoAdapter;
 
 import java.util.ArrayList;
 

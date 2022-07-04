@@ -1,4 +1,4 @@
-package com.tmdhoon.todolist.recyclerview;
+package com.tmdhoon.todolist.Recyclerview;
 
 import android.view.LayoutInflater;
 import android.view.View;

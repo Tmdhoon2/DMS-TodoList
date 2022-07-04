@@ -19,10 +19,12 @@ import com.tmdhoon.todolist.fragment.SearchFragment;
 public class MainActivity extends AppCompatActivity {
 
     private ActivityMainBinding binding;
-    private FragmentManager fragmentManager = getSupportFragmentManager();
-    private HomeFragment homeFragment = new HomeFragment();
-    private SearchFragment searchFragment = new SearchFragment();
-    private MypageFragment mypageFragment = new MypageFragment();
+
+    private FragmentManager fragmentManager = getSupportFragmentManager();                          // 프래그먼트를 교체하거나 추가, 삭제 하는데 사용되는 클래스
+
+    private HomeFragment homeFragment = new HomeFragment();                                         // 홈 프래그먼트
+    private SearchFragment searchFragment = new SearchFragment();                                   // 검색 프래그먼트
+    private MypageFragment mypageFragment = new MypageFragment();                                   // 마이페이지 프래그먼트
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
-        FragmentTransaction transaction;
+        FragmentTransaction transaction;                                                            // FragmentManager를 통해 획득
         transaction = fragmentManager.beginTransaction();
         transaction.replace(R.id.framelayout, homeFragment).commitNowAllowingStateLoss();
 
