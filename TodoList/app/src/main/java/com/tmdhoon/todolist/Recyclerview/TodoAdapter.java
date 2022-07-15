@@ -15,15 +15,21 @@ import java.util.ArrayList;
 
 public class TodoAdapter extends RecyclerView.Adapter<TodoAdapter.TodoViewHolder>{
 
-    private TodolistRecyclerviewBinding binding;
     private ArrayList<ReData> arrayList;
 
     public class TodoViewHolder extends RecyclerView.ViewHolder {
-        public TextView tvTodo;
+
+        public TextView contents;
+        public TextView title;
+        public TextView created_at;
+        public TextView member_id;
 
         public TodoViewHolder(View view) {
             super(view);
-            tvTodo = (TextView) view.findViewById(R.id.tvTodo);
+            contents = view.findViewById(R.id.tvcontents);
+            title = view.findViewById(R.id.tvtitle);
+            created_at = view.findViewById(R.id.tvcreated_at);
+            member_id = view.findViewById(R.id.tvmember_id);
         }
     }
 
@@ -43,7 +49,10 @@ public class TodoAdapter extends RecyclerView.Adapter<TodoAdapter.TodoViewHolder
     @Override
     public void onBindViewHolder(@NonNull TodoAdapter.TodoViewHolder holder, int position) {
 
-        holder.tvTodo.setText(arrayList.get(position).getTvTodo());
+        holder.contents.setText(arrayList.get(position).getContents());
+        holder.title.setText(arrayList.get(position).getTitle());
+        holder.created_at.setText(arrayList.get(position).getCreated_at());
+        holder.member_id.setText(arrayList.get(position).getMember_id());
 
 
     }

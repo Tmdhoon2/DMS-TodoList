@@ -1,11 +1,11 @@
-package com.tmdhoon.todolist.Login;
+package com.tmdhoon.todolist.SignIn;
 
-public class LoginRequest {
+public class SignInRequest {
 
     private String userId;
     private String userPw;
 
-    public LoginRequest(String userId, String userPw) {
+    public SignInRequest(String userId, String userPw) {
         this.userId = userId;
         this.userPw = userPw;
     }

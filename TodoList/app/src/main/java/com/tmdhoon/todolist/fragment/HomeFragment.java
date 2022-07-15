@@ -24,10 +24,8 @@ public class HomeFragment extends Fragment{
     private ArrayList<ReData> arrayList = new ArrayList<>();
     private RecyclerView recyclerView;
     private TodoAdapter todoAdapter;
-    private CheckBox checkBox;
-    private TextView tvTodo;
 
-   public View onCreateView(LayoutInflater inflater, ViewGroup containter,
+    public View onCreateView(LayoutInflater inflater, ViewGroup containter,
                             Bundle savedInstanceState){
        View view = inflater.inflate(R.layout.fragment_home, containter, false);
 
@@ -41,7 +39,6 @@ public class HomeFragment extends Fragment{
        recyclerView.setItemAnimator(new DefaultItemAnimator());
        recyclerView.setAdapter(todoAdapter);
 
-
        return view;
    }
 
@@ -52,17 +49,20 @@ public class HomeFragment extends Fragment{
 
 
     private void TodoData(){
-       arrayList.add(new ReData("프래그먼트에 리사이클러뷰 띄우기"));
-       arrayList.add(new ReData("로그인 / 회원가입 서버 연동하기"));
-       arrayList.add(new ReData("마이페이지에 회원정보 띄우기"));
-       arrayList.add(new ReData("검색 로직 짜기"));
-       arrayList.add(new ReData("서버 연동 공부하기"));
-       arrayList.add(new ReData("프로젝트 성공적으로 끝내기"));
-       arrayList.add(new ReData("동생 암살"));
-       arrayList.add(new ReData("동생 컴퓨터 부시기"));
-       arrayList.add(new ReData("에어컨 틀기"));
-       arrayList.add(new ReData("공부하기"));
-       arrayList.add(new ReData("배틀그라운드 하기"));
-       arrayList.add(new ReData("유튜브 보기"));
+        arrayList.add(new ReData("siehf", "wiebf", "wiebf", "wiebfi"));
+        arrayList.add(new ReData("siehf", "wiebf", "wiebf", "wiebfi"));
+        arrayList.add(new ReData("siehf", "wiebf", "wiebf", "wiebfi"));
+        arrayList.add(new ReData("siehf", "wiebf", "wiebf", "wiebfi"));
+        arrayList.add(new ReData("siehf", "wiebf", "wiebf", "wiebfi"));
+        arrayList.add(new ReData("siehf", "wiebf", "wiebf", "wiebfi"));
+        arrayList.add(new ReData("siehf", "wiebf", "wiebf", "wiebfi"));
+        arrayList.add(new ReData("siehf", "wiebf", "wiebf", "wiebfi"));
+        arrayList.add(new ReData("siehf", "wiebf", "wiebf", "wiebfi"));
+        arrayList.add(new ReData("siehf", "wiebf", "wiebf", "wiebfi"));
+        arrayList.add(new ReData("siehf", "wiebf", "wiebf", "wiebfi"));
+        arrayList.add(new ReData("siehf", "wiebf", "wiebf", "wiebfi"));
+        arrayList.add(new ReData("siehf", "wiebf", "wiebf", "wiebfi"));
+        arrayList.add(new ReData("siehf", "wiebf", "wiebf", "wiebfi"));
+
     }
 }
